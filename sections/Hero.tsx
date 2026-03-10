@@ -61,7 +61,7 @@ export default function Hero() {
           {/* Contenedor con borde sólido */}
           <div className="relative w-64 h-64 rounded-full flex items-center justify-center shadow-2xl hover:scale-105 active:scale-95 transition-transform">
             <Image
-              src="/images/HojaVida.png"
+              src="/images/HojaVida1.png"
               alt="Foto de Juan Andrés Mendieta"
               width={300}
               height={300}

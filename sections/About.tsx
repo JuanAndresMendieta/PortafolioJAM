@@ -48,7 +48,7 @@ export default function About() {
         <FadeIn>
           <div className="flex flex-col items-center gap-6">
             <Image
-              src="/images/Presentacion.png"
+              src="/images/Presentacion1.png"
               alt="Presentación de Juan Andrés Mendieta"
               width={300}
               height={300}
@@ -56,7 +56,7 @@ export default function About() {
             />
 
             <Image
-              src="/images/Amazon.png"
+              src="/images/Amazon1.png"
               alt="Proyecto Amazon de Juan Andrés Mendieta"
               width={300}
               height={300}

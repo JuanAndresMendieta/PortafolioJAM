@@ -10,7 +10,8 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50)
+      // 👉 Cambia este número a tu gusto (ejemplo: 150, 300, etc.)
+      setScrolled(window.scrollY > 200)
     }
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
@@ -29,7 +30,12 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="font-bold text-lg text-white">
+        {/* Título solo visible al hacer scroll */}
+        <h1
+          className={`font-bold text-lg text-white transition-opacity duration-300 ${
+            scrolled ? "opacity-100" : "opacity-0"
+          }`}
+        >
           Juan Andres Mendieta
         </h1>
 
@@ -83,4 +89,3 @@ export default function Navbar() {
     </nav>
   )
 }
-
